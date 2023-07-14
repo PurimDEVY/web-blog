@@ -1,4 +1,4 @@
-export default function Blog(){
+export default async function Blog(){
     return (
         <h1>hello blog</h1>
     )
