@@ -6,10 +6,10 @@ const blogSchema = {
     type: 'document',
     fields: [
         {
-            name: 'name',
-            title: 'Name',
-            type: 'string'
-        },
+            name: 'title',
+            title: 'Title',
+            type: 'string',
+          },
         {
             name: 'slug',
             title: 'Slug',
@@ -17,11 +17,16 @@ const blogSchema = {
             option: { source: 'name' }
         },
         {
+            name: 'publishedAt',
+            title: 'Published at',
+            type: 'datetime',
+        },
+        {
             name: 'image',
             title: 'Image',
             type: 'image',
             option: { hotspot: true },
-            fieldA: [
+            field: [
                 {
                     name: 'alt',
                     title: 'Alt',
